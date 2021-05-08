@@ -14,6 +14,5 @@ def language(request):
 @pytest.fixture(scope="function")
 def browser():
     browser = webdriver.Chrome()
-    browser.implicitly_wait(3)
     yield browser
     browser.quit()
